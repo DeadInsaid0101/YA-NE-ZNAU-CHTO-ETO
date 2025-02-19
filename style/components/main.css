@@ -185,7 +185,7 @@
   }
 
 input[type='radio']:checked + span {
-  background-image: url(/img/check.svg);
+  background-image: url(check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

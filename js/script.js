@@ -1,9 +1,9 @@
 let new_game = [
-    { src: '/img/night_dvor.jpg', href: '/page.html' },
-    { src: '/img/pixel_fon_2.jpg', href: '/page2.html' },
-    { src: '/img/pixel_fon_3.png', href: '/page3.html' },
-    { src: '/img/pixel_fon_4.jpg', href: '/page4.html' },
-    { src: '/img/pixel_fon_5.jpg', href: '/page5.html' }
+    { src: './img/night_dvor.jpg', href: './page.html' },
+    { src: './img/pixel_fon_2.jpg', href: './page2.html' },
+    { src: './img/pixel_fon_3.png', href: './page3.html' },
+    { src: './img/pixel_fon_4.jpg', href: './page4.html' },
+    { src: './img/pixel_fon_5.jpg', href: './page5.html' }
   ];
 
   const btn1 = document.getElementById('btn-chapter-1');

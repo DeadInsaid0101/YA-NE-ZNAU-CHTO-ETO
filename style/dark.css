@@ -1,5 +1,5 @@
 .page.theme_dark {
-    --bg-image: url(/img/dark_fon_7.png);
+    --bg-image: url(../img/dark_fon_7.png);
     --accent-color: rgb(221, 208, 21);
     --accent-color-bg-button: rgba(0, 255, 21, 0.3);
     --main-color: white;
@@ -24,7 +24,7 @@
   
   @media (prefers-color-scheme: dark) {
     :root {
-        --bg-image: url(/img/dark_fon_7.png);
+        --bg-image: url(../img/dark_fon_7.png);
         --accent-color: rgb(221, 208, 21);
         --accent-color-bg-button: rgba(0, 255, 21, 0.3);
         --main-color: white;
@@ -44,5 +44,6 @@
           rgb(233, 219, 19) 80%,
           #cacaca 100%
         );
+        --start-game-gradient: linear-gradient(rgb(208, 238, 42) 30%, rgb(0, 0, 0) 100%);
     }
   }
