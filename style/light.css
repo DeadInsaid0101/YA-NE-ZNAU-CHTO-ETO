@@ -1,0 +1,26 @@
+.page.theme_light {
+    --bg-image: url(/img/40e67b523c561b4a52c763413683ab99.jpg);
+    --accent-color: rgb(245, 59, 121);
+    --accent-color-bg-button: rgb(245, 59, 121, 0.3);
+    --main-color: white;
+    --main-color-text-card: rgb(243, 243, 243);
+    --sub-accent-color: rgb(255, 0, 85);
+    --footer-bg: rgb(245, 59, 121, 0.9);
+    --social-svg-color: rgb(255, 167, 196);
+    --social-svg-color-hover: white;
+    --label-span-color: #feafe8;
+    --list-item-chapters-color: rgb(255, 88, 186);
+    --header-bg-color: rgb(0, 0, 0, 0.5);
+    --logo-gradient: linear-gradient(
+        to left,
+        #cacaca 20%,
+        #ffffff 30%,
+        #c9c9c9 70%,
+        #ffffff 80%,
+        #cacaca 100%
+      );
+      --start-game-gradient: linear-gradient(rgb(245, 59, 121, 0.5) 30%, rgb(245, 59, 199, 0.8) 100%);
+  }
+  
+
+  

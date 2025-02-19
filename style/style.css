@@ -1,0 +1,22 @@
+
+@import "fonts.css";
+
+@import "variables.css";
+
+@import "./components/header.css";
+@import "./components/main.css";
+
+@import "./components/footer.css";
+
+
+@import "./dark.css";
+
+@import "./light.css";
+
+
+@import "globals.css";
+
+
+
+@import "animation.css";
+

@@ -1,0 +1,308 @@
+.main {
+    margin: 40px 170px 20px 170px;
+}
+
+.main_tittle {
+    text-transform: uppercase;
+    font-size: clamp(25px, 5vw, 45px);
+    color: var(--accent-color);
+    text-shadow: 5px 5px 0 black;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: new_game 1s linear alternate infinite;
+}
+
+.sub_tittle {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-shadow: 5px 5px 2px black;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.card_character {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   margin-bottom: 100px;
+   align-items: start;
+}
+
+.container_character_img {
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.character_img {
+    
+    object-fit: contain;
+    height: 700px;
+    transition: .2s linear;
+    
+}
+
+.character_img_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+    transition: .2s linear;
+    object-fit: contain;
+    height: 700px;
+}
+
+.container_character_img:hover .character_img_2, .card_character:has(.button_character:hover) .character_img_2 {
+      transform: translate(0, -2.5%) rotate(5deg) scale(1.2);
+    
+}
+
+.container_character_img:hover .character_img, .card_character:has(.button_character:hover) .character_img {
+     transform: translate(10%, 2.5%) rotate(5deg) scale(1.2);
+    
+}
+
+.container_character_img:hover .circle, .card_character:has(.button_character:hover) .circle {
+    scale: 1.2;
+    transform-origin: 0 0;
+    
+}
+
+.button_character:hover {
+    animation: new_game 1s linear alternate infinite;
+    
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 420px;
+    height: 420px;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: -25;
+    transition: scale 0.2s linear;
+    transform-origin: 0 0;
+}
+
+.header_card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.tittle_character {
+    color: var(--accent-color);
+    text-shadow: 2px 2px 2px black;
+    
+    
+}
+
+.button_character {
+    color: var(--main-color);
+    padding: 10px 20px;
+    border: 5px solid var(--accent-color);
+    box-shadow: 5px 5px 2px black;
+    background-color: var(--accent-color-bg-button);
+    text-shadow: 2px 2px 2px black;
+}
+
+.text_character {
+    color: var(--main-color-text-card);
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.start_game::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.page:has(.start_game[open]) {
+    overflow: hidden;
+}
+
+.start_game[open] {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    inline-size: 960px;
+    max-inline-size: 100%;
+    border: 3px solid var(--accent-color);
+    padding: 30px;
+    background-image: var(--start-game-gradient);
+    color: var(--main-color);
+    text-shadow: 2px 2px 2px black;
+}
+
+.start_game_tittle {
+   margin-bottom: 40px;
+}
+
+.list_chapters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.img_chapters {
+    object-fit: cover;  
+    border: 3px solid var(--accent-color);
+    margin-bottom: 30px;
+    width: 430px;
+    height: 260px;
+    
+}
+
+.start_game_second_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: var(--label-span-color);
+    transition: outline 0.2s linear;
+    cursor: pointer;
+  }
+  
+  label span:hover {
+    outline: 4px solid var(--accent-color);
+  }
+
+  input[type='radio'] + span {
+    border-radius: 50%;
+  }
+
+input[type='radio']:checked + span {
+  background-image: url(/img/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.list_item-chapters {
+    transition: .2s linear;
+    color: var(--list-item-chapters-color);
+}
+
+.btn-chapters {
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.list_item-chapters:hover {
+    transform: translate(5px);
+    color: var(--main-color);
+    
+    
+    
+}
+
+@media (width <= 1152px) {
+    .main {
+        margin: 40px 70px 20px 70px;
+     }
+
+    .circle {
+        width: 320px;
+        height: 320px;
+    }
+
+    .tittle_character {
+        line-height: 1.5
+    }
+
+    .button_character:not(.button_continue, .button_close) {
+        width: 200px;
+    }
+}
+
+@media (width <= 1024px) {
+    
+
+
+    .button_character:not(.button_continue, .button_close) {
+        width: 300px;
+    }
+
+    .sub_tittle {
+        line-height: 1.5;
+    }
+
+    .card_character {
+        gap: 40px;
+    }
+
+    .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    
+}
+
+@media (width <= 800px) {
+
+    .start_game_tittle {
+        line-height: 1.5;
+    }
+
+    label {
+        line-height: 1.5;
+    } 
+
+    .start_game[open] {
+        inline-size: 700px;
+        
+    }
+
+    .img_chapters {
+        width: 330px;
+    height: 230px;
+    }
+
+    .button_container {
+        display: flex;
+        gap: 5px;
+    }
+
+   
+}
+
+@media (width <= 540px) {
+
+
+
+    .card_character {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .main {
+        margin: 40px 7px 20px 7px;
+     }
+    
+     .button_character:not(.button_continue, .button_close) {
+        width: 200px;
+    }
+
+    .card_character {
+        margin-bottom: 0px;
+    }
+
+    .start_game[open] {
+        inline-size: 100%;
+        grid-template-columns: 1fr;
+    }
+}

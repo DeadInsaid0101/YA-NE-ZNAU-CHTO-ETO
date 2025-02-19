@@ -1,0 +1,48 @@
+.page.theme_dark {
+    --bg-image: url(/img/dark_fon_7.png);
+    --accent-color: rgb(221, 208, 21);
+    --accent-color-bg-button: rgba(0, 255, 21, 0.3);
+    --main-color: white;
+    --main-color-text-card: rgb(243, 243, 243);
+    --sub-accent-color: rgb(0, 148, 12);
+    --footer-bg: rgba(0, 0, 0, 0.7);
+    --social-svg-color: rgb(221, 208, 21);
+    --social-svg-color-hover: rgb(0, 148, 12);
+    --label-span-color: black;
+    --list-item-chapters-color: rgb(255, 88, 186);
+    --header-bg-color: rgba(0, 0, 0, 0.7);
+    --logo-gradient: linear-gradient(
+        to left,
+        #cacaca 20%,
+        rgb(221, 208, 21) 30%,
+        #c9c9c9 70%,
+        rgb(233, 219, 19) 80%,
+        #cacaca 100%
+      );
+      --start-game-gradient: linear-gradient(rgb(208, 238, 42) 30%, rgb(0, 0, 0) 100%);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-image: url(/img/dark_fon_7.png);
+        --accent-color: rgb(221, 208, 21);
+        --accent-color-bg-button: rgba(0, 255, 21, 0.3);
+        --main-color: white;
+        --main-color-text-card: rgb(243, 243, 243);
+        --sub-accent-color: rgb(0, 148, 12);
+        --footer-bg: rgba(0, 0, 0, 0.7);
+        --social-svg-color: rgb(221, 208, 21);
+        --social-svg-color-hover: rgb(0, 148, 12);
+        --label-span-color: black;
+        --list-item-chapters-color: rgb(255, 88, 186);
+        --header-bg-color: rgba(0, 0, 0, 0.7);
+        --logo-gradient: linear-gradient(
+          to left,
+          #cacaca 20%,
+          rgb(221, 208, 21) 30%,
+          #c9c9c9 70%,
+          rgb(233, 219, 19) 80%,
+          #cacaca 100%
+        );
+    }
+  }

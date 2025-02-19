@@ -1,0 +1,59 @@
+.footer {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-bg);
+    
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.fio {
+    color: var(--social-svg-color);
+    transition: opacity 0.15s linear;
+    cursor: default;
+}
+
+.fio:hover {
+    opacity: 0;
+    
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+}
+
+.social_svg {
+    height: 50px;
+    width: 50px;
+    fill: var(--social-svg-color);
+}
+
+.social_svg_vk, .social_svg_tg, .social_svg_inst {
+    transition: 0.3s linear; 
+}
+
+.social_svg_vk:hover {
+    transform: scale(1.2) rotate(20deg);
+    fill: var(--social-svg-color-hover);
+    transform-origin: bottom right;
+}
+
+.social_svg_tg:hover {
+    transform: scale(1.2) rotate(-20deg);
+    fill: var(--social-svg-color-hover);
+    transform-origin: bottom left;
+}
+
+.social_svg_inst:hover {
+    transform: scale(1.2) rotate(65deg);
+    fill: var(--social-svg-color-hover);
+    transform-origin: bottom left;
+}
